@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Spanish Flashcards</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <h1>Spanish Flashcards</h1>
+    <div class="flashcard-container">
+        <div class="flashcard">
+            <div class="flashcard-inner">
+                <div class="flashcard-front">
+                    <p id="front"></p>
+                </div>
+                <div class="flashcard-back">
+                    <p id="back"></p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="navigation">
+        <button id="prev-btn">Previous</button>
+        <button id="next-btn">Next</button>
+    </div>
+    <script src="{{ url_for('static', filename='script.js') }}"></script>
+</body>
+</html>
